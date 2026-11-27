@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "After Hours POS · Cloud",
+  "short_name": "After Hours POS",
+  "description": "After Hours Bar point of sale, cloud-synced with Supabase. Cash and card are POS ledger records; bank-card payments use an external terminal.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f4e9",
+  "theme_color": "#174b36",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "./"
+}
