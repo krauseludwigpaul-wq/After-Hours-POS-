@@ -1,4 +1,4 @@
-<!doctype html><html lang="en-ZA"><head><meta charset="utf-8"><meta name="after-hours-build" content="v5.8-cashier-mixer-repair"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light"><title>After Hours Bar POS</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#174b36"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="./icon-192.png"><style>
+<!doctype html><html lang="en-ZA"><head><meta charset="utf-8"><meta name="after-hours-build" content="v5.9-payment-amount-input-fix"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light"><title>After Hours Bar POS</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#174b36"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="./icon-192.png"><style>
 :root{--cream:#f5f4e9;--forest:#174b36;--green:#246449;--mint:#e2eadb;--ink:#24372c;--muted:#728075;--line:#e4e6dc;--white:#fffefa;--red:#a83b37;--gold:#a87932;--shadow:0 5px 20px #24432c08;font:15px/1.45 'Segoe UI',Arial,sans-serif;color:var(--ink);background:var(--cream)}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--white);color:var(--forest);font-weight:650;transition:.15s}button:hover{background:var(--mint)}button:disabled{opacity:.45;cursor:not-allowed}.primary{background:var(--forest);color:white;border-color:var(--forest)}.primary:hover{background:var(--green)}.danger{color:var(--red)}.ghost{background:transparent;border:0}.small{font-size:12px;padding:7px 10px}.wide{width:100%}.big{font-size:27px;font-weight:750;letter-spacing:-.8px}h1,h2,h3,p{margin:0}h1{font-size:28px;line-height:1.2;letter-spacing:-.65px}h2{font-size:19px;letter-spacing:-.3px}h3{font-size:15px}p,small,.muted{color:var(--muted)}small{font-size:12px}.eyebrow{letter-spacing:1.5px;font-size:10px;font-weight:750;color:var(--muted);text-transform:uppercase}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.between{justify-content:space-between}.stack{display:grid;gap:12px}.grow{flex:1}.app{min-height:100dvh;display:grid;grid-template-columns:198px minmax(0,1fr)}aside{background:#fffefa;border-right:1px solid var(--line);padding:24px 14px;position:sticky;top:0;height:100dvh;display:flex;flex-direction:column;gap:24px}.brand{display:flex;gap:10px;align-items:center;padding:0 6px}.mark{background:var(--forest);color:#fff;border-radius:14px;width:43px;height:43px;display:grid;place-items:center;font-size:21px;font-weight:800;letter-spacing:-1.2px}.brand b{font-size:14px;letter-spacing:.6px}.brand small{font-size:10px}.nav{display:grid;gap:6px}.nav button{text-align:left;border:0;background:transparent;padding:13px 12px;font-weight:550;color:var(--muted);display:flex;gap:12px;align-items:center}.nav button.active{background:var(--forest);color:#fff}.nav button svg{width:19px;height:19px}.local{margin-top:auto;padding:13px;border-radius:14px;background:var(--mint);font-size:12px}.local b{display:block}.main{min-width:0}.top{padding:19px 28px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--cream)}.top select{max-width:250px}.pill{display:inline-flex;align-items:center;gap:6px;background:var(--mint);padding:6px 10px;border-radius:999px;font-size:11px;color:var(--forest);font-weight:700}.pill.warn{background:#f8ebd0;color:#87682e}.pill.red{background:#f8e0dc;color:var(--red)}.content{padding:24px 28px 40px;max-width:1750px;margin:auto}.heading{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:20px;flex-wrap:wrap}.heading p{margin-top:6px}.sell{display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:22px;align-items:start}.search{width:100%;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:16px}.categories{display:flex;gap:9px;overflow:auto;padding:0 0 12px}.cat{min-width:102px;flex:1;border-radius:18px;text-align:left;padding:12px;display:grid;gap:8px;white-space:normal;font-size:12px;line-height:1.2;background:#fffefa}.cat .cat-icon{font-size:23px}.cat.active{background:var(--forest);color:#fff;border-color:var(--forest)}.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:14px}.product{border:1px solid var(--line);background:var(--white);border-radius:19px;padding:10px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;gap:8px}.picture{height:112px;display:grid;place-items:center;background:#f0f1e6;border-radius:13px;overflow:hidden}.picture svg{height:95px;width:90px}.picture img{width:100%;height:100%;object-fit:contain}.product h3{font-size:14px;line-height:1.25;min-height:34px}.product .bottom{display:flex;justify-content:space-between;align-items:center;margin-top:auto}.plus{background:var(--forest);color:white;border:0;width:34px;height:34px;border-radius:11px;padding:0;font-size:21px}.price{font-size:17px;font-weight:800;color:var(--forest)}.panel{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:19px;box-shadow:var(--shadow);min-width:0}.cart{position:sticky;top:16px;height:auto;display:grid;gap:12px;align-content:start;max-height:calc(100dvh - 32px);overflow:auto}.cartitems{display:grid;gap:10px;max-height:38vh;overflow:auto}.line{border-bottom:1px solid var(--line);padding:9px 0;display:grid;gap:7px}.line .qty{display:flex;align-items:center;gap:6px}.qty button{width:29px;height:29px;padding:0}.total{border-top:1px dashed var(--line);padding-top:12px}.empty{text-align:center;padding:26px 10px;color:var(--muted)}.empty .round{display:grid;place-items:center;background:var(--mint);border-radius:50%;width:60px;height:60px;margin:0 auto 12px;font-size:26px}.grid2,.grid3,.grid4{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}.metric{display:grid;gap:7px}.metric strong{font-size:25px;letter-spacing:-.7px;color:var(--forest)}.metric small{font-size:11px}.section{margin-top:18px}.bartrack{min-width:70px;flex:1;background:#eef1e8;border-radius:8px;height:9px;overflow:hidden}.barfill{background:var(--green);height:100%;border-radius:8px}.scroll{overflow:auto}.table{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}.table th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);padding:12px 10px;border-bottom:1px solid var(--line)}.table td{padding:12px 10px;border-bottom:1px solid var(--line)}.table tr:last-child td{border:0}.tabs-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}label{display:grid;gap:5px;font-size:12px;font-weight:650;color:var(--muted)}input,select,textarea{min-width:0;border:1px solid var(--line);border-radius:11px;padding:11px 12px;background:#fff;color:var(--ink);max-width:100%;outline:none}input:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px #24644912}input[type=checkbox]{width:18px;height:18px;accent-color:var(--forest)}.check{display:flex;align-items:center;gap:8px;color:var(--ink);font-size:14px}.notice{padding:12px 14px;background:#f5ecd7;color:#755923;border-radius:12px;font-size:12px}.greenbox{background:var(--mint);border-radius:14px;padding:14px;color:var(--forest)}.divider{height:1px;background:var(--line)}dialog{border:0;border-radius:23px;background:var(--white);color:var(--ink);padding:0;width:min(94vw,550px);max-height:92dvh;box-shadow:0 20px 80px #142d2d44}dialog::backdrop{background:#172d236c;backdrop-filter:blur(3px)}.modal-head{padding:19px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}.modal-body{padding:20px 22px;display:grid;gap:14px;max-height:70dvh;overflow:auto}.modal-foot{padding:15px 22px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}.segment{display:flex;gap:7px;overflow:auto;flex-wrap:wrap}.segment button{flex:1}.segment .active{background:var(--forest);color:white}.toast{position:fixed;z-index:1000;bottom:20px;right:20px;background:var(--forest);color:white;padding:13px 19px;border-radius:12px;max-width:min(420px,92vw);box-shadow:0 10px 30px #0002}.toast.error{background:var(--red)}.hidden{display:none!important}.mobilecart{display:none}.mobilebrand{display:none}.reportbar{display:flex;flex-wrap:wrap;gap:8px;align-items:end;margin:15px 0}.success{display:grid;place-items:center;text-align:center;gap:14px;padding:18px 0}.success .tick{background:var(--forest);color:#fff;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:33px}.status-empty{color:var(--red)}#print-area{display:none}.mini-img{height:42px;width:42px;object-fit:contain;border-radius:9px;background:var(--cream)}
 @media(max-width:1200px){.app{grid-template-columns:160px minmax(0,1fr)}aside{padding:20px 9px}.content{padding:18px}.sell{grid-template-columns:minmax(0,1fr) 295px;gap:14px}.product-grid{grid-template-columns:repeat(auto-fill,minmax(128px,1fr))}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.top{padding:16px 18px}}@media(max-width:850px){.app{display:block}aside{height:auto;position:sticky;top:0;z-index:5;padding:8px 12px;gap:7px;border-right:0;border-bottom:1px solid var(--line)}aside .brand{display:none}.nav{display:flex;overflow:auto;gap:5px}.nav button{white-space:nowrap;flex:0 0 auto;padding:10px;font-size:12px;gap:5px}.nav button svg{width:16px}.local{display:none}.mobilebrand{display:flex;align-items:center;gap:8px}.top{padding:12px 14px}.top select{max-width:175px}.content{padding:15px 13px 90px}.sell{display:block}.cart{display:none;position:fixed;inset:0;top:auto;height:auto;max-height:87dvh;z-index:10;border-radius:24px 24px 0 0;overflow:auto;box-shadow:0 -12px 50px #0003}.cart.open{display:grid}.cartitems{max-height:34dvh}.mobilecart{display:flex;position:fixed;z-index:8;bottom:14px;left:13px;right:13px;justify-content:space-between;align-items:center;padding:15px 18px;border-radius:16px;box-shadow:0 8px 25px #174b3640}.product-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}.picture{height:108px}.categories{gap:7px}.cat{min-width:100px}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.heading h1{font-size:24px}.metric strong{font-size:21px}.panel{padding:15px}.modal-body{padding:15px}.modal-head,.modal-foot{padding:14px 15px}.toast{bottom:80px}.top .eyebrow{display:none}}@media(max-width:390px){.grid2,.grid3,.grid4{gap:8px}.metric strong{font-size:18px}.top select{max-width:155px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.picture{height:100px}}@media print{body>*{display:none!important}#print-area{display:block!important;color:#111;background:white;font:12px Arial;padding:15px}#print-area table{white-space:normal}#print-area h1{font-size:23px}#print-area td,#print-area th{padding:7px;border:1px solid #ddd}}
 
@@ -1025,11 +1025,31 @@ render();
     modeChanged();
   };
   window.afterHoursTestModeChanged=modeChanged;
+  // Parse South African Rand amounts without silently changing the total:
+  // 25, 25.00, 25,00, R25.00 and grouped thousands are allowed.
+  // All arithmetic uses integer cents, validated again by Supabase at checkout.
+  function parseRandCents(raw) {
+    let s=String(raw??'').trim().replace(/[\u00a0\u202f]/g,' ')
+      .replace(/^R\s*/i,'').replace(/\s+/g,'');
+    if (/^\d{1,3}(?:,\d{3})+(?:\.\d{1,2})?$/.test(s)) s=s.replace(/,/g,'');
+    else if (/^\d{1,3}(?:\.\d{3})+(?:,\d{1,2})$/.test(s))
+      s=s.replace(/\./g,'').replace(',','.');
+    else if (/^\d+(?:,\d{1,2})$/.test(s))s=s.replace(',','.');
+    if (!/^\d+(?:\.\d{1,2})?$/.test(s))return null;
+    const [whole,fraction='']=s.split('.');
+    const n=Number(whole)*100+Number(fraction.padEnd(2,'0'));
+    return Number.isSafeInteger(n)&&n<=2147483647?n:null;
+  }
   function centsInput(id) {
-    const v=val(id).trim();
-    if(!/^\d+(?:\.\d{1,2})?$/.test(v)) throw Error('Enter a valid amount in Rands (up to 2 decimal places).');
-    const n=Math.round(Number(v)*100);
-    if(!Number.isSafeInteger(n)||n>2147483647) throw Error('Amount exceeds limits');
+    const el=$el(id);
+    if(!el)throw Error('Payment screen changed. Reopen checkout before recording a payment.');
+    const n=parseRandCents(el.value);
+    if(n===null){
+      const labels={'test-tip':'tip','test-received':'cash received',
+        'test-cash-portion':'cash portion','v45-settle-tip':'settlement tip',
+        'v5-mix-price':'combination price'};
+      throw Error('Enter a valid '+(labels[id]||'amount')+' in rands, for example 25.00 or 25,00.');
+    }
     return n;
   }
   async function submitTestSale(quote) {
@@ -1281,10 +1301,8 @@ render();
   const v45Tag='AFTER HOURS · FINAL TEST';
   const v45TipNote='TEST EVENT ONLY. Tips are included in the total collected, and tab tips do not reduce the outstanding tab debt.';
   function v45SafeCents(id){
-    const el=$el(id);if(!el)return 0;
-    const raw=(el.value||'').trim();
-    if(!/^\d+(?:\.\d{1,2})?$/.test(raw))return null;
-    const n=Math.round(Number(raw)*100);return Number.isSafeInteger(n)&&n<=2147483647?n:null;
+    const el=$el(id);if(!el)return null;
+    return parseRandCents(el.value);
   }
   function v45Fmt(c){return moneyCloud(c)}
   function v45SetText(id,text){const el=$el(id);if(el)el.textContent=text;}
@@ -1306,10 +1324,12 @@ render();
     v45SetText('v45-card-total',card===null||card<0?'—':v45Fmt(card));
     v45SetText('v45-change',recv===null||cash===null?'—':v45Fmt(Math.max(0,recv-cash)));
     let msg='';
-    if(total===null)msg='Enter a valid tip.';
-    else if(cash===null||card<0)msg='Cash portion cannot exceed amount due.';
+    if(total===null)msg='Tip must be a valid Rand amount (e.g. 0.00 or 0,00).';
+    else if(cash===null)msg='Enter a valid cash portion (e.g. 10.00 or 10,00).';
+    else if(card<0)msg='Cash portion cannot exceed amount due.';
     else if(method==='split'&&(!cash||!card))msg='Split cash and card portions must both be above zero.';
-    else if(method!=='card'&&(recv===null||recv<cash))msg='Cash received must cover the cash portion.';
+    else if(method!=='card'&&recv===null)msg='Enter cash received in Rand (e.g. 25.00 or 25,00).';
+    else if(method!=='card'&&recv<cash)msg='Cash received must cover the cash portion.';
     v45SetText('v45-pay-warning',msg);
     const submit=$el('modal-confirm');if(submit && !submitting)submit.disabled=!!msg;
   }
@@ -1326,10 +1346,10 @@ render();
       `<div class="greenbox"><div class="row between"><span>Drink subtotal</span><b>${v45Fmt(quote.total)}</b></div>`+
       `<div class="row between"><span>Tip</span><b id="v45-tip-display">R0.00</b></div>`+
       `<div class="row between"><strong>TOTAL AMOUNT DUE</strong><strong class="big" id="v45-grand-total">${v45Fmt(quote.total)}</strong></div></div>`+
-      field('Tip (R)','test-tip','0.00','number','min="0" step="0.01" oninput="v45RecalcPayment()"')+
+      field('Tip (R)','test-tip','0.00','text','inputmode="decimal" oninput="v45RecalcPayment()"')+
       '<label>Payment method<select id="test-method" onchange="afterHoursTestModeChanged()"><option value="cash">Cash</option><option value="card">Card</option><option value="split">Split cash + card</option></select></label>'+
-      '<div id="split-inputs" hidden>'+field('Cash portion (R)','test-cash-portion',(quote.total/200).toFixed(2),'number','min="0" step="0.01" oninput="v45RecalcPayment()"')+'</div>'+
-      '<div id="test-received-wrap">'+field('Cash received (R)','test-received',(quote.total/100).toFixed(2),'number','min="0" step="0.01" oninput="this.dataset.touched=\'1\';v45RecalcPayment()"')+'</div>'+
+      '<div id="split-inputs" hidden>'+field('Cash portion (R)','test-cash-portion',(quote.total/200).toFixed(2),'text','inputmode="decimal" oninput="v45RecalcPayment()"')+'</div>'+
+      '<div id="test-received-wrap">'+field('Cash received (R)','test-received',(quote.total/100).toFixed(2),'text','inputmode="decimal" oninput="this.dataset.touched=\'1\';v45RecalcPayment()"')+'</div>'+
       '<div class="panel stack"><div class="row between"><span>Cash to record</span><b id="v45-cash-total"></b></div><div class="row between"><span>Card to record</span><b id="v45-card-total"></b></div><div class="row between"><span>Change</span><b id="v45-change"></b></div><small id="v45-pay-warning" style="color:var(--red)"></small></div>'+
       '<label class="check"><input type="checkbox" id="test-ack"> I confirm the selected event ('+esc(E().name)+') and payment details</label>',
       (E().name===TEST_NAME?'Post practice payment':'Record live payment'),()=>submitTestSale(quote).catch(showError));
@@ -2644,7 +2664,7 @@ render();
       .forEach(node=>node.remove());
     root.querySelectorAll('button[onclick="saveTabDialog()"]')
       .forEach(node=>node.textContent='Save to Tab');
-    const status=$el('cloud-stage-badge');if(status)status.textContent='Cloud connected · v5.8';
+    const status=$el('cloud-stage-badge');if(status)status.textContent='Cloud connected · v5.9';
     if(window.afterHoursCloudPriceIssues?.length && page==='sell'){
       const target=$el('content');
       if(target&&!target.querySelector('#pos-final-prices-warning')){
